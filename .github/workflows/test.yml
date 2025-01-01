@@ -9,6 +9,7 @@ jobs:
       - uses: actions/setup-node@v4.1.0
         with:
           node-version: "22.x"
+          cache: "yarn"
       - name: dependencies install
         run: yarn install
   build:
@@ -19,6 +20,7 @@ jobs:
       - uses: actions/setup-node@v4.1.0
         with:
           node-version: "22.x"
+          cache: "yarn"
       - name: dependencies install
         run: yarn install
       - name: Create build
@@ -31,6 +33,7 @@ jobs:
       - uses: actions/setup-node@v4.1.0
         with:
           node-version: "22.x"
+          cache: "yarn"
       - name: dependencies install
         run: yarn install
       - name: Create build
@@ -43,6 +46,7 @@ jobs:
       - uses: actions/setup-node@v4.1.0
         with:
           node-version: "22.x"
+          cache: "yarn"
       - name: dependencies install
         run: yarn install
       - name: deploy
