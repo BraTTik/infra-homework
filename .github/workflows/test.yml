@@ -43,5 +43,7 @@ jobs:
       - uses: actions/setup-node@v4.1.0
         with:
           node-version: "22.x"
+      - name: dependencies install
+        run: yarn install
       - name: deploy
         run: yarn deploy
